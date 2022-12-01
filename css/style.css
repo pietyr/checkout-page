@@ -1,0 +1,23 @@
+:root {
+	--orange: #f2994a;
+	--gray-1: #333333;
+	--gray: #4e5150;
+	--gray-2: #4f4f4f;
+	--gray-3: #828282;
+	--gray-4: #bdbdbd;
+	--gray-5: #e0e0e0;
+	--gray-6: #f2f2f2;
+	--white: #ffffff;
+}
+
+body {
+	color: var(--gray);
+}
+
+body,
+input,
+select,
+button {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+}
