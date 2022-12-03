@@ -35,16 +35,18 @@
 										<span class="old-price">$94.99</span>
 									</div>
 								</div>
-								<div class="number-of-items">
+								<div class="items-quantity">
 									<button
 										type="button"
 										aria-label="Reduce quantity"
+										class="quantity-button"
 									>
 										-
 									</button>
 									<input
 										type="number"
 										name="vintage-backbag"
+										class="quantity"
 										id="vintage-backbag-quantity"
 										value="1"
 										min="0"
@@ -54,6 +56,7 @@
 									<button
 										type="button"
 										aria-label="Increase quantity"
+										class="quantity-button"
 									>
 										+
 									</button>
@@ -74,16 +77,18 @@
 										<span class="old-price">$124.99</span>
 									</div>
 								</div>
-								<div class="number-of-items">
+								<div class="items-quantity">
 									<button
 										type="button"
 										aria-label="Reduce quantity"
+										class="quantity-button"
 									>
 										-
 									</button>
 									<input
 										type="number"
 										name="levi-shoes-quantity"
+										class="quantity"
 										id="levi-shoes-quantity"
 										value="1"
 										min="0"
@@ -93,6 +98,7 @@
 									<button
 										type="button"
 										aria-label="Increase quantity"
+										class="quantity-button"
 									>
 										+
 									</button>
@@ -118,80 +124,92 @@
 				<section class="user-information">
 					<fieldset>
 						<legend>Contact information</legend>
-						<label>
-							<span class="label-span">E-mail</span>
-							<input
-								type="email"
-								name="email"
-								placeholder="Enter your email..."
-							/>
-						</label>
-						<label>
-							<span class="label-span">Phone</span>
-							<input
-								type="tel"
-								name="tel-number"
-								placeholder="Enter your phone..."
-							/>
-						</label>
+						<div class="label-wrapper">
+							<label>
+								<span class="label-span">E-mail</span>
+								<input
+									type="email"
+									name="email"
+									placeholder="Enter your email..."
+								/>
+							</label>
+						</div>
+						<div class="label-wrapper">
+							<label>
+								<span class="label-span">Phone</span>
+								<input
+									type="tel"
+									name="tel-number"
+									placeholder="Enter your phone..."
+								/>
+							</label>
+						</div>
 					</fieldset>
 					<fieldset>
 						<legend>Shipping address</legend>
-						<label>
-							<span class="label-span">Full name</span>
-							<input
-								type="text"
-								name="full-name"
-								placeholder="Enter your full name..."
-							/>
-						</label>
-						<label>
-							<span class="label-span">Address</span>
-							<input
-								type="text"
-								name="address"
-								placeholder="Your address..."
-							/>
-						</label>
-						<label>
-							<span class="label-span">City</span>
-							<input
-								type="text"
-								name="city"
-								placeholder="Your city..."
-							/>
-						</label>
-						<label>
-							<span class="label-span">Country</span>
-							<select name="country">
-								<option disabled selected>
-									Your country...
-								</option>
-								<option value="Belarus">Belarus</option>
-								<option value="Czechia">Czechia</option>
-								<option value="Germany">Germany</option>
-								<option value="Lithuania">Lithuania</option>
-								<option value="poland">Poland</option>
-								<option value="Russia">Russia</option>
-								<option value="Slovakia">Slovakia</option>
-								<option value="Ukraine">Ukraine</option>
-							</select>
-						</label>
-						<label>
-							<span class="label-span">Postal code</span>
-							<input
-								type="text"
-								name="postal-code"
-								placeholder="Your postal code..."
-							/>
-						</label>
-						<label>
-							<input type="checkbox" name="save-information" />
-							<span class="label-span">
-								Save this information for next time
-							</span>
-						</label>
+						<div class="label-wrapper">
+							<label>
+								<span class="label-span">Full name</span>
+								<input
+									type="text"
+									name="full-name"
+									placeholder="Enter your full name..."
+								/>
+							</label>
+						</div>
+						<div class="label-wrapper">
+							<label>
+								<span class="label-span">Address</span>
+								<input
+									type="text"
+									name="address"
+									placeholder="Your address..."
+								/>
+							</label>
+						</div>
+						<div class="label-wrapper">
+							<label>
+								<span class="label-span">City</span>
+								<input
+									type="text"
+									name="city"
+									placeholder="Your city..."
+								/>
+							</label>
+						</div>
+						<div class="label-wrapper">
+							<label>
+								<span class="label-span">Country</span>
+								<select name="country">
+									<option disabled selected>
+										Your country...
+									</option>
+									<option value="Belarus">Belarus</option>
+									<option value="Czechia">Czechia</option>
+									<option value="Germany">Germany</option>
+									<option value="Lithuania">Lithuania</option>
+									<option value="poland">Poland</option>
+									<option value="Russia">Russia</option>
+									<option value="Slovakia">Slovakia</option>
+									<option value="Ukraine">Ukraine</option>
+								</select>
+							</label>
+							<label>
+								<span class="label-span">Postal code</span>
+								<input
+									type="text"
+									name="postal-code"
+									placeholder="Your postal code..."
+								/>
+							</label>
+						</div>
 					</fieldset>
+					<label>
+						<input type="checkbox" name="save-information" />
+						<span class="label-span">
+							Save this information for next time
+						</span>
+					</label>
 					<button type="submit">Continue</button>
 				</section>
 			</form>

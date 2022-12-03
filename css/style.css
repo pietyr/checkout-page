@@ -21,3 +21,160 @@ button {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
 }
+
+h1 {
+	font-size: clamp(1.5rem, 4vw, 2.25rem);
+	line-height: 1.21;
+}
+
+section.cart {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--gray-6);
+	border-radius: 0.75rem;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+li.cart-item {
+	display: flex;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	border-radius: 2rem;
+}
+
+div.item-info-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.item-info-text-wrapper > span {
+	font-size: clamp(0.75rem, 2vw, 1rem);
+}
+
+div.price-wrapper {
+	display: flex;
+	gap: 0.75rem;
+	align-items: center;
+}
+
+span.new-price {
+	font-size: clamp(0.875rem, 2vw, 1rem);
+	color: var(--orange);
+}
+
+span.old-price {
+	font-size: clamp(0.625rem, 2vw, 0.75rem);
+	text-decoration: line-through;
+}
+
+div.items-quantity {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0.625rem;
+	border: 1px solid var(--gray-3);
+	border-radius: 0.75rem;
+}
+
+input.quantity {
+	background-color: inherit;
+	border: none;
+	text-align: center;
+	font-size: 1rem;
+	appearance: none;
+}
+
+button.quantity-button {
+	font-size: 1rem;
+	color: var(--gray-3);
+	background-color: var(--gray-5);
+	border: none;
+	border-radius: 0.25rem;
+	width: clamp(1.1875rem, 5vw, 1.3125rem);
+	height: clamp(1.1875rem, 5vw, 1.3125rem);
+	padding: 0;
+}
+
+div.summary-entry {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.875rem;
+	color: var(--gray-1);
+	padding: 0.75rem 0;
+	border-top: 1px solid var(--gray-4);
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+legend {
+	font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+	color: var(--gray-1);
+	padding: 0;
+}
+
+div.label-wrapper {
+	display: flex;
+}
+
+div.label-wrapper label {
+	display: flex;
+	flex-direction: column;
+}
+
+span.label-span {
+	font-size: clamp(0.625rem, 2vw, 0.75rem);
+	color: var(--gray-2);
+}
+
+.user-information input {
+	font-size: clamp(0.75rem, 2vw, 1rem);
+	color: var(--gray-1);
+}
+
+.user-information input:placeholder-shown {
+	color: var(--gray-3);
+}
+
+select {
+	color: var(--gray-3);
+}
+
+input[type="checkbox"] {
+	color: var(--gray-2);
+	font-size: clamp(0.625rem, 2vw, 0.75rem);
+}
+
+button[type="submit"] {
+	color: var(--white);
+	background-color: var(--orange);
+	font-size: 1rem;
+	padding: 1.0625rem 2.8125rem;
+	border: none;
+	border-radius: 12px;
+}
+
+footer {
+	text-align: center;
+	color: var(--gray-4);
+	font-size: 0.875rem;
+}
+
+footer a {
+	font-weight: 700;
+}
+
+footer a:visited {
+	color: inherit;
+}
