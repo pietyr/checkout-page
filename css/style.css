@@ -152,6 +152,7 @@ fieldset {
 	display: flex;
 	flex-direction: column;
 	border: none;
+	padding: 0;
 }
 
 legend {
@@ -167,6 +168,15 @@ div.label-wrapper {
 div.label-wrapper label {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+}
+
+div.label-wrapper.last-wrapper {
+	justify-content: space-between;
+}
+
+div.label-wrapper.last-wrapper label {
+	width: 46%;
 }
 
 span.label-span {
@@ -177,6 +187,14 @@ span.label-span {
 .user-information input {
 	font-size: clamp(0.75rem, 2vw, 1rem);
 	color: var(--gray-1);
+}
+
+.user-information input:not([type="checkbox"]),
+.user-information select {
+	border: 1px solid var(--gray-3);
+	border-radius: 0.75rem;
+	min-height: 40px;
+	padding: clamp(0.75rem, 2vw, 1rem);
 }
 
 .user-information input:placeholder-shown {
