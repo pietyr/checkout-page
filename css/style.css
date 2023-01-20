@@ -176,7 +176,7 @@ div.label-wrapper.last-wrapper {
 }
 
 div.label-wrapper.last-wrapper label {
-	width: 46%;
+	width: 47%;
 }
 
 span.label-span {
@@ -187,14 +187,30 @@ span.label-span {
 .user-information input {
 	font-size: clamp(0.75rem, 2vw, 1rem);
 	color: var(--gray-1);
+	width: 80%;
+}
+
+.user-information input:focus {
+	outline: none;
 }
 
 .user-information input:not([type="checkbox"]),
 .user-information select {
+	border: none;
+}
+
+div.input-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.125rem;
 	border: 1px solid var(--gray-3);
 	border-radius: 0.75rem;
-	min-height: 40px;
 	padding: clamp(0.75rem, 2vw, 1rem);
+}
+
+span.material-symbols-outlined {
+	color: var(--gray-3);
 }
 
 .user-information input:placeholder-shown {
@@ -202,7 +218,14 @@ span.label-span {
 }
 
 select {
-	color: var(--gray-3);
+	color: var(--gray-1);
+	background-color: #fff;
+	width: 100%;
+	font-size: clamp(0.75rem, 2vw, 1rem);
+}
+
+select:focus {
+	outline: none;
 }
 
 input[type="checkbox"] {
