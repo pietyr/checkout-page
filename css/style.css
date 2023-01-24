@@ -203,6 +203,7 @@ section.user-information {
 	}
 	section.cart {
 		max-width: 24rem;
+		max-height: 535px;
 	}
 	section.user-information {
 		/* max-width: 40%; */
@@ -287,6 +288,7 @@ footer {
 	text-align: center;
 	color: var(--gray-4);
 	font-size: 0.875rem;
+	margin-top: 2rem;
 }
 
 footer a {
